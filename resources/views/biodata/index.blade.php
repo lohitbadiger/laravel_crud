@@ -51,16 +51,16 @@
                 <form action="{{route('biodata.destroy',$biodata->id)}}" method="post">
                     
                     
-                    <a class="btn btn-sm btn-success" href="{{route('biodata.show', $biodata->id)
-                    }}">Show
-                    </a>
+                    <a class="btn btn-sm btn-success" href="{{route('biodata.show', $biodata->id)}}">SHOW </a>
                      
-                    <a class="btn btn-sm btn-success" href="{{route('biodata.show', $biodata->id)
-                        }}">Edit
-                    </a>
-                        @csrf 
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-sm btn-danger" name="button">DELETE</button>
+                    <a class="btn btn-sm btn-warning" href="{{route('biodata.edit', $biodata->id)}}">EDIT </a>
+                     
+                    
+                    @csrf 
+                        
+                    
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-sm btn-danger" name="button">DELETE</button>
                 </form>
             </td>
             </tr>
